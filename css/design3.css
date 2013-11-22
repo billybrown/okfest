@@ -568,10 +568,16 @@ a:link {
 }
 
 /* line 5, ../scss/partials/_titles.scss */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Squada One", cursive;
   margin: 0 0 1em;
   line-height: 1.35em;
+}
+
+/* line 11, ../scss/partials/_titles.scss */
+h1, .h1 {
+  font-size: 2.5em;
+  line-height: 1.1em;
 }
 
 /* line 5, ../scss/partials/_navicon.scss */
