@@ -1,0 +1,103 @@
+
+
+// import compass mixins - http://compass-style.org/
+@import "compass/utilities/general/clearfix"; // A good clearfix
+@import "compass/css3";     // Use one CSS3 mixin instead of multiple vendor prefixes.
+
+//
+// Fonts
+//
+
+$courier:         	"Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+$helvetica:       	"Helvetica Neue", Helvetica, Arial, sans-serif;
+$baskerville:				Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$futura:            Futura, "Trebuchet MS", Arial, sans-serif;
+		
+$base-font-family: 	$helvetica; 	// The font family set on the body element.
+$font-headers:			$futura;
+$font-monospace:   	$courier;
+$font-fancy:				$baskerville;
+
+//
+// Colors, etc.
+//
+
+$www-blue: 					#57dfff;
+$www-green: 				#6cd805;
+
+$web-black:					#333333;
+
+$background-color: 	#fff;
+$content-color:	    #fff;
+$text-color:				$web-black;
+
+$footer-color:      #eee;
+$footer-link-color:      #ccc;
+$navicon-color:     #eee;
+$conference-meta-color: #eee;
+$block-color:       #eee;
+
+$link-color:        darken($www-blue, 20%);
+$link-color-hover:  darken($www-blue, 30%);
+
+//
+// Misc. Variables
+//
+
+$min-width: 				300px;	// Set a minimum width because real tiny screens, which are hard to test for,
+$max-width: 				90em;
+
+$indent-amount: 		30px;	// The amount lists, blockquotes and comments are indented.
+
+$nav-off-canvas-width: 		70%;			// for the off canvas nav
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// BREAKPOINTS (media query stuff)
+// Below are the breakpoints and the mixins to use them
+// inside partials. Be sure to use ems for your breakpoints
+// to account for users zooming. Just divide pixels by 16.
+// EXAMPLE USECASE
+//  .random-class {
+//     font-size: 1em;
+//     @include break-medium {
+//		  font-size: 2em;	
+//	   }
+//  }
+
+$small-bp: 					30em;
+$medium-bp: 				47.5em;
+$large-bp: 					60em;
+
+// Media query and IE support stuff
+// more info about this method here: http://jakearchibald.github.io/sass-ie/
+///==================================================================================
+$fix-mqs: false !default;
+
+@mixin respond($width) {
+	// If were outputting for a fixed media query set...
+  @if $fix-mqs {
+    // ...and if we should apply these rules...
+    @if $fix-mqs >= $width {
+      // ...output the content the user gave us.
+      @content;
+  	}
+  }
+  @else {
+    // Otherwise, output it using a regular media query
+    @media screen and (min-width: $width) {
+      @content;
+  	}
+  }
+}
+
+
+// I also have a respond-max mixin, that does what you might expect
+$old-ie: false !default;
+@mixin old-ie {
+  // Only use this content if we're dealing with old IE
+  @if $old-ie {
+    @content;
+  }
+}
+
+

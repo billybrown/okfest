@@ -1,0 +1,47 @@
+// ==========================================================================
+// Styles for mobile meny button
+// ==========================================================================
+
+.mobile-nav {
+  cursor: pointer;
+  background: $navicon-color;
+  padding: 8px 10px 0px;
+  position: relative;
+  width: 80px;
+  height: 24px;
+  margin: 0 0 1em;
+
+  p {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: .9em;
+    float: left;
+  }
+  .no-js & {
+    display: none;
+  }
+    
+  .navicon {
+    width: 20px;
+    float: right;
+  }
+  span {
+    display: block;
+    height: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    background: white;
+  }
+
+  &:hover {
+    background: $link-color;
+  }
+
+  @include respond($medium-bp) {
+    display: none;
+  }
+}

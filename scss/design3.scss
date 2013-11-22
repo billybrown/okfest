@@ -1,0 +1,105 @@
+@import "_normalize";
+
+
+// some basic variables and mixins
+@import "_base";
+
+$blue-blue: 	rgba(25,150,255,.5);
+$blue-green: 	rgba(45,215,255,.5);
+$green-blue: 	rgba(45,255,215,.5);
+$green-green: 	rgba(25,255,150,.5);
+
+$link-color: $blue-blue;
+$footer-color: $green-green;
+$conference-meta-color: $green-blue;
+
+$base-font-family: 'Droid Sans', sans-serif;
+$font-headers: 'Medula One', cursive;
+$font-headers: 'Squada One', cursive;
+
+// some classes that help do basic things, like hide text, etc.
+@import "_tools";
+
+
+// partials
+@import "partials/_link-styles";
+@import "partials/_buttons";
+@import "partials/_titles";
+@import "partials/_navicon";
+@import "partials/_html-body";
+@import "partials/_header";
+@import "partials/_hero";
+@import "partials/_footer";
+@import "partials/_aside";
+@import "partials/_posts";
+
+
+
+.main-footer {
+	border-top: 8px solid black;
+	
+	a {
+		background: darken($green-green, 10%);
+
+		&:hover {
+			background: darken($green-green, 20%);
+		}
+	}
+}
+
+
+.hero-section-1 p {
+	background-color: $blue-blue;
+}
+
+.hero-section-2 p {
+	background-color: $blue-green;
+}
+
+.hero-section-3 p {
+	background-color: $green-blue;
+}
+
+.hero-section-1:hover,
+.hero-section-2:hover,
+.hero-section-3:hover {
+
+	p {
+		background-color: rgba(255,255,255,0);
+	}
+}
+
+
+
+.footer-hat {
+	width: 100%;
+	background: url('../img/light-border2.png');
+	height: 62px;
+}
+
+h2, .h2 {
+	font-size: 3em;
+	font-weight: 300;
+	line-height: 1em;
+	margin: 0 0 .5em;
+}
+
+.hero-section p {
+	font-size: 2.5em;
+	font-weight: 300;
+	line-height: 1em;
+	@include respond($medium-bp){
+		height: 8em;
+	}
+}
+h3, h4 , .h3, .h4{
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 1em;
+		margin: 0 0 .5em;
+}
+
+
+
+
+

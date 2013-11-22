@@ -1,0 +1,24 @@
+
+.post-content {
+
+    img {
+        margin-bottom: 1em;
+    }
+}
+
+.photos {
+	@include clearfix;
+}
+.photo2, .photo3 {
+	width: 50%;
+	float: left;
+	@include box-sizing(border-box);
+}
+
+.photo2 {
+	padding-right: .5em;
+}
+
+.photo3 {
+	padding-left: .5em;
+}

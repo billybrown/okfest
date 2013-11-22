@@ -1,0 +1,47 @@
+// footer
+
+.main-footer {
+	background: $footer-color;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: white;
+		display: block;
+		@extend .button;
+		@include box-sizing(border-box);
+		margin-bottom: .25em;
+		background: darken($footer-color, 10%);
+		color: white;
+
+		&:hover {
+			background: darken($footer-color, 20%);
+		}
+	}
+}
+
+.main-footer-inner {
+	max-width: $max-width;
+    margin: 0 auto;
+    @include box-sizing(border-box);
+	padding: 2em 5% 5%;
+
+	@include respond($medium-bp) {
+		@include clearfix;
+	}
+}
+
+.footer-section {
+	margin: 0 0 2em;
+	@include respond($medium-bp) {
+		width: 24.5%;
+		float: left;
+		padding-right: 1em;
+		@include box-sizing(border-box);
+	}
+}
+

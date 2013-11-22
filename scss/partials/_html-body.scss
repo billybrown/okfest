@@ -1,0 +1,62 @@
+// ==========================================================================
+// General
+// ==========================================================================
+
+body {
+	font-family: $base-font-family;
+	font-size: .9em;
+	line-height: 1.5em;
+	color: $text-color;
+	min-width: $min-width;
+	background: $background-color;
+}
+
+.main-page {
+	padding: 0 5% 2em;
+	max-width: $max-width;
+    margin: 0 auto;
+  	@include box-sizing(border-box);
+  	@include respond($medium-bp) {
+  		@include clearfix;
+  	}
+}
+
+.main-content {
+	@include respond($medium-bp) {
+		width: 66.666%;
+		float: left;
+		padding-right: 2em;
+		@include box-sizing(border-box);
+	}
+}
+
+.main-aside {
+  	@include respond($medium-bp) {
+		width: 33.333%;
+		float: right;
+	}
+}
+
+// for the mobile nav
+
+#page-wrapper-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    width: auto;
+}
+
+#page-wrapper {
+    width: 100%;
+    position: relative;
+    @include transition(left .5s ease);
+
+	.js & {
+        left: 0;
+	}
+  
+	.js.js-nav & {
+        left: $nav-off-canvas-width;
+	}
+}

@@ -1,0 +1,161 @@
+// ==========================================================================
+// header
+// ==========================================================================
+
+.main-header {
+  padding-bottom: 1em;
+  @include respond($medium-bp) {
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  p {
+  	margin: 0;
+  }
+}
+
+.landing .main-header {
+  @include respond($medium-bp) {
+    margin-bottom: 1em;
+  }
+}
+.header-inner {
+  padding: 2em 5% 0;
+  @include box-sizing(border-box);
+  max-width: $max-width;
+  margin: 0 auto 1em;
+}
+
+.site-name {
+  margin: 0 0 1em;
+  text-align: center;
+  @include respond($medium-bp) {
+    float: left;
+    margin: 0;
+    width: 33.333%
+  }
+
+  img {
+    max-height: 150px;
+  }
+}
+
+.header-text {
+  @include respond($medium-bp) {
+    @include clearfix;
+    position: relative;
+    padding-top: 1em;
+  }
+}
+
+.conference-meta {
+  background: $conference-meta-color;
+  padding: 1em;
+  @include respond($medium-bp) {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    width: 50%;
+    @include box-sizing(border-box);
+  }
+
+  @include respond($large-bp) { 
+    width: 33.33%;
+  }
+}
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-inner {
+  padding: 0 5%;
+  @include box-sizing(border-box);
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  .menu {
+    margin-top: 1em;
+    @include respond($medium-bp) {
+      margin-top: 0;
+    }
+  }
+
+  li {
+    @include respond($medium-bp) {
+      float: left;
+      width: 16.666%;
+      text-align: center;
+    }
+  }
+
+  a {
+    background: $link-color;
+    display: block;
+    @extend .button;
+    @include respond($medium-bp) {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    &:hover {
+      background: lighten($link-color, 10%);
+      text-decoration: none;
+          color: white;
+
+    }
+  }
+}
+
+
+// styles for the main menu
+.main-navigation {
+  z-index: 200;
+  overflow: hidden;
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  background: #eee;
+  color: #fff;
+  padding: 5%;
+  @include box-sizing(border-box);
+
+  // .no-js on step 2?
+  &:not(:target) {
+    z-index: 1;
+    height: 0;
+  }
+
+  .js & {
+    height: 100%;
+    width: $nav-off-canvas-width;
+    left: (0 - $nav-off-canvas-width);
+
+    @include respond($medium-bp) {
+      height: auto;
+      width: auto;
+      left: auto;
+    }
+  }
+
+  @include respond($medium-bp) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+}
+
+#main-menu-close {
+  @include respond($medium-bp){
+    display: none;
+  }
+}
+
+
+
