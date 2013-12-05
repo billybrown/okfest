@@ -766,7 +766,7 @@ body {
 
 /* line 50, ../scss/partials/_header.scss */
 .conference-meta {
-  background: #adcc0d;
+  background: rgba(91, 86, 153, 0.75);
   padding: 1em;
 }
 @media screen and (min-width: 47.5em) {
@@ -1103,67 +1103,87 @@ body {
 }
 
 /* line 37, ../scss/design1.scss */
-.main-header {
-  border-top: 3px solid #5b5699;
+.conference-meta {
+  color: white;
 }
 
 /* line 40, ../scss/design1.scss */
+.site-name {
+  text-align: left;
+}
+/* line 43, ../scss/design1.scss */
+.site-name img {
+  background: white;
+  padding: 20px;
+}
+
+/* line 48, ../scss/design1.scss */
+.main-header {
+  border-top: 3px solid #5b5699;
+  background: url("../img/design1-1_bg.png") center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 55, ../scss/design1.scss */
 .main-footer {
   border-top: 3px solid #484478;
 }
-/* line 42, ../scss/design1.scss */
+/* line 57, ../scss/design1.scss */
 .main-footer a {
   background: none;
   padding: 0;
 }
-/* line 45, ../scss/design1.scss */
+/* line 60, ../scss/design1.scss */
 .main-footer a:hover {
   color: #ff5443;
   background: none;
 }
 
-/* line 52, ../scss/design1.scss */
+/* line 67, ../scss/design1.scss */
 .main-navigation {
   background: #ffb1a9;
   border-top: 3px solid #ff5443;
   border-bottom: 3px solid #ff5443;
 }
 
-/* line 58, ../scss/design1.scss */
+/* line 73, ../scss/design1.scss */
 .footer-title {
   border-bottom: 3px solid #484478;
   padding-bottom: .5em;
 }
 
-/* line 62, ../scss/design1.scss */
+/* line 77, ../scss/design1.scss */
 .hero-section-1 p {
-  background-color: rgba(42, 139, 255, 0.85);
+  background-color: rgba(42, 139, 255, 0.55);
 }
 
-/* line 66, ../scss/design1.scss */
+/* line 81, ../scss/design1.scss */
 .hero-section-2 p {
-  background-color: rgba(91, 86, 153, 0.85);
+  background-color: rgba(91, 86, 153, 0.55);
 }
 
-/* line 70, ../scss/design1.scss */
+/* line 85, ../scss/design1.scss */
 .hero-section-3 p {
-  background-color: rgba(173, 204, 13, 0.85);
+  background-color: rgba(173, 204, 13, 0.55);
 }
 
-/* line 78, ../scss/design1.scss */
+/* line 93, ../scss/design1.scss */
 .hero-section-1:hover p,
 .hero-section-2:hover p,
 .hero-section-3:hover p {
   background-color: rgba(255, 255, 255, 0);
 }
 
-/* line 83, ../scss/design1.scss */
+/* line 98, ../scss/design1.scss */
 .block-title {
   border-bottom: 3px solid #849c0a;
   padding-bottom: .5em;
 }
 
-/* line 88, ../scss/design1.scss */
+/* line 103, ../scss/design1.scss */
 h2, .h2 {
   font-size: 3em;
   font-weight: 700;
@@ -1171,20 +1191,20 @@ h2, .h2 {
   margin: 0 0 .5em;
 }
 
-/* line 95, ../scss/design1.scss */
+/* line 110, ../scss/design1.scss */
 .hero-section p {
   font-size: 2.5em;
   font-weight: 700;
   line-height: 1.1em;
 }
 @media screen and (min-width: 47.5em) {
-  /* line 95, ../scss/design1.scss */
+  /* line 110, ../scss/design1.scss */
   .hero-section p {
     height: 8em;
   }
 }
 
-/* line 103, ../scss/design1.scss */
+/* line 118, ../scss/design1.scss */
 h3, h4, .h3, .h4 {
   font-size: 1.5em;
   font-weight: 700;
@@ -1192,7 +1212,7 @@ h3, h4, .h3, .h4 {
   margin: 0 0 .5em;
 }
 
-/* line 110, ../scss/design1.scss */
+/* line 125, ../scss/design1.scss */
 .block a {
   color: white;
 }

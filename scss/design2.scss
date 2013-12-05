@@ -34,6 +34,9 @@ $font-headers: 'Source Sans Pro', sans-serif;
 @import "partials/_posts";
 
 
+.site-name {
+	text-align: left;
+}
 .main-header {
 	background: url('../img/design2-bg3.jpg') center;
 	@include background-size(cover);

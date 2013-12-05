@@ -1103,6 +1103,11 @@ body {
 }
 
 /* line 37, ../scss/design2.scss */
+.site-name {
+  text-align: left;
+}
+
+/* line 40, ../scss/design2.scss */
 .main-header {
   background: url("../img/design2-bg3.jpg") center;
   -webkit-background-size: cover;
@@ -1111,54 +1116,54 @@ body {
   background-size: cover;
   margin-bottom: 4em;
 }
-/* line 42, ../scss/design2.scss */
+/* line 45, ../scss/design2.scss */
 .landing .main-header {
   margin-bottom: 0;
 }
 
-/* line 48, ../scss/design2.scss */
+/* line 51, ../scss/design2.scss */
 .main-navigation a {
   background: white;
   color: #00f0a0;
 }
 
-/* line 54, ../scss/design2.scss */
+/* line 57, ../scss/design2.scss */
 .hero {
   background: #bdffe9;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 @media screen and (min-width: 47.5em) {
-  /* line 54, ../scss/design2.scss */
+  /* line 57, ../scss/design2.scss */
   .hero {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 
-/* line 64, ../scss/design2.scss */
+/* line 67, ../scss/design2.scss */
 .hero-section-1 p {
   background-color: rgba(36, 255, 182, 0.5);
 }
 
-/* line 68, ../scss/design2.scss */
+/* line 71, ../scss/design2.scss */
 .hero-section-2 p {
   background-color: rgba(36, 255, 182, 0.5);
 }
 
-/* line 72, ../scss/design2.scss */
+/* line 75, ../scss/design2.scss */
 .hero-section-3 p {
   background-color: rgba(36, 255, 182, 0.5);
 }
 
-/* line 80, ../scss/design2.scss */
+/* line 83, ../scss/design2.scss */
 .hero-section-1:hover p,
 .hero-section-2:hover p,
 .hero-section-3:hover p {
   background-color: rgba(255, 255, 255, 0);
 }
 
-/* line 85, ../scss/design2.scss */
+/* line 88, ../scss/design2.scss */
 h2, .h2 {
   font-size: 3em;
   font-weight: 300;
@@ -1166,11 +1171,11 @@ h2, .h2 {
   margin: 0 0 .5em;
 }
 
-/* line 93, ../scss/design2.scss */
+/* line 96, ../scss/design2.scss */
 .main-footer a {
   background: #00f0a0;
 }
-/* line 96, ../scss/design2.scss */
+/* line 99, ../scss/design2.scss */
 .main-footer a:hover {
   background: #00bd7e;
 }

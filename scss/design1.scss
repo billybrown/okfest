@@ -11,7 +11,7 @@ $red:			#ff5443;
 
 $link-color: $red;
 $footer-color: $purple;
-$conference-meta-color: $green;
+$conference-meta-color: rgba(91,86,153, .75);
 $navicon-color: $blue;
 $block-color: $green;
 
@@ -34,9 +34,24 @@ $font-headers: 'Source Sans Pro', sans-serif;
 @import "partials/_aside";
 @import "partials/_posts";
 
+.conference-meta {
+	color: white;
+}
+.site-name {
+	text-align: left;
+
+	img {
+		background: white;
+		padding: 20px;
+	}
+}
 .main-header {
 	border-top: 3px solid $purple;
+	background: url('../img/design1-1_bg.png') center;
+	@include background-size(cover);
 }
+
+
 .main-footer {
 	border-top: 3px solid darken($purple, 10%);
 	a {
@@ -60,15 +75,15 @@ $font-headers: 'Source Sans Pro', sans-serif;
 	padding-bottom: .5em;
 }
 .hero-section-1 p {
-	background-color: rgba(42,139,255, .85);
+	background-color: rgba(42,139,255, .55);
 }
 
 .hero-section-2 p {
-	background-color: rgba(91,86,153, .85);
+	background-color: rgba(91,86,153, .55);
 }
 
 .hero-section-3 p {
-	background-color: rgba(173,204,13, .85);
+	background-color: rgba(173,204,13, .55);
 }
 
 .hero-section-1:hover,
