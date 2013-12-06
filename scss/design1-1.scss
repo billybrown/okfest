@@ -11,7 +11,7 @@ $red:			#ff5443;
 
 $link-color: $red;
 $footer-color: $purple;
-$conference-meta-color: $green;
+$conference-meta-color: rgba(91,86,153, .75);
 $navicon-color: $blue;
 $block-color: $green;
 
@@ -34,9 +34,21 @@ $font-headers: 'Source Sans Pro', sans-serif;
 @import "partials/_aside";
 @import "partials/_posts";
 
+.conference-meta {
+	color: white;
+}
+.site-name {
+	text-align: left;
 
+	img {
+		background: white;
+		padding: 20px;
+	}
+}
 .main-header {
 	border-top: 3px solid $purple;
+	background: url('../img/design1-1_bg.png') center;
+	@include background-size(cover);
 }
 
 
