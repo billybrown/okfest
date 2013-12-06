@@ -1,7 +1,7 @@
 okfest
 ======
 
-Open Knowledge Festival
+Open Knowledge Festival Mockups
 
 I made a simple layout based on the 2012 Open Knowledge Festival Site:
 
